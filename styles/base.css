@@ -21,12 +21,12 @@ body, header, .grid, footer {
     padding: 20px;
     justify-content: center;
 }
-.header {
+header {
     border-top-left-radius: 10px 10px;
     border-top-right-radius: 10px 10px;
 }
 
-.header,  footer {
+header,  footer {
     background-color: var(--accent1-color);
     margin: auto;
 }
