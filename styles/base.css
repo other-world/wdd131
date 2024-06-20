@@ -1,13 +1,11 @@
 /* Style sheet for Jamie Cummings personal page. WDD 131 */
-@import url('https://fonts.googleapis.com/css?family=Gupter|Oswald');
-
 :root {
     --primary-color: #000000;
     --secondary-color: rgb(251, 251, 251);
     --accent1-color: #054A91;
     --accent2-color: #F17300;
 
-    --heading-font: 'Oswald', serif;
+    --heading-font: 'Roboto', sans-serif;
     --paragraph-font: 'Gupter', serif;
     
     --nav-bg-color: var(--primary-color);
@@ -21,6 +19,8 @@ body, header, .grid, footer {
     margin: 0 auto;
     max-width: 1000px;
     justify-content: center;
+    font-family: var(--paragraph-font);
+    font-weight: 400;
 }
 
 
