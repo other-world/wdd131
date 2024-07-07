@@ -1,19 +1,3 @@
-:root {
-    --primary-color: white;
-    --secondary-color: rgb(251, 251, 251);
-    --accent1-color: #054A91;
-    --accent2-color: #F17300;
-
-    --heading-font: 'Roboto', sans-serif;
-    --paragraph-font: 'Gupter', serif;
-    
-    --nav-bg-color: var(--primary-color);
-    --nav-link-color: var(--accent1-color);
-    --nav-visited-color: #0d1c92;
-    --nav-hover-link-color: var(--accent2-color);
-    --nav-hover-background-color: var(--accent2-color);
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -62,7 +46,6 @@ h1 {
 	content: "x";
 }
 
-
 nav {
 	background-color: rgb(27, 76, 150);
 }
@@ -94,12 +77,6 @@ nav {
 .show li {
 	display: block;
 }
-
-/*.navigation a:hover {
-	background-color: white;
-	color: #333;
-	font-weight: 700;
-}*/
 
 h2 {
     display: flex;
