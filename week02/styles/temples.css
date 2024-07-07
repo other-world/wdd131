@@ -59,7 +59,7 @@ h1 {
 }
 
 #menu.show::before {
-	content: "X";
+	content: "x";
 }
 
 
