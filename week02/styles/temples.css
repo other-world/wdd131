@@ -1,0 +1,96 @@
+:root {
+    --primary-color: white;
+    --secondary-color: rgb(251, 251, 251);
+    --accent1-color: #054A91;
+    --accent2-color: #F17300;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Gupter', serif;
+    
+    --nav-bg-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-visited-color: #0d1c92;
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header, main, footer
+{
+    
+    background-color: rgb(27, 76, 150);
+    color: white;
+    width: 100%;
+    max-width: 960px;
+    margin: 1rem auto;
+    border: 1px solid rgb(165, 164, 164);
+    padding: 1rem;
+}
+
+header{
+    display: inline-grid;
+    grid-template-columns: 1fr;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+    align-items: center;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation a {
+	padding: 1rem;
+	text-align: center;
+    vertical-align: middle;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: white;
+	color: #333;
+	font-weight: 700;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    justify-items: center;
+
+    background-color: #fff;
+    color:rgb(27, 76, 150)
+}
+
+footer
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+

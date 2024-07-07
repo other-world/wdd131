@@ -1,0 +1,33 @@
+@media screen and (min-width: 500px){
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+    
+    main
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2
+    {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+
+    
+}
