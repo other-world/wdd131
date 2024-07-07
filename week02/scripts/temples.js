@@ -1,16 +1,11 @@
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const mainNav = document.querySelector('.navigation');
 
-menu.addEventListener('click', () => {
-	// menu.classList.toggle('show');
-	// layout.classList.toggle('show');
+hamButton.addEventListener('click', () => {
+	mainNav.classList.toggle('show');
+	hamButton.classList.toggle('show');
 	toggleMenuButton();
 });
-
-function toggleMenuButton() {
-	menu.classList.toggle('show');
-	layout.classList.toggle('show');
-};
 
 
 

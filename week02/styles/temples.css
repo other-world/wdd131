@@ -14,77 +14,82 @@
     --nav-hover-background-color: var(--accent2-color);
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, main, footer
-{
+header, main, footer {
     
     background-color: rgb(27, 76, 150);
     color: white;
     width: 100%;
     max-width: 960px;
     margin: 1rem auto;
-    border: 1px solid rgb(165, 164, 164);
+    /*border: 1px solid rgb(165, 164, 164);*/
     padding: 1rem;
 }
 
-header{
+header {
     display: inline-grid;
     grid-template-columns: 1fr;
 }
 
 #menu {
-    display: block;
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
 	color: #000;
-    position: absolute;
-	top: 1rem;
-	right: 1rem;
 }
 
 #menu::before {
-	content: "☰";
-    color: white;
+	content: "≡";
 }
 
 #menu.show::before {
-	content: "x";
-}
-
-#menu.show .hide {
-    display: none;
+	content: "X";
 }
 
 
+nav {
+	background-color: rgb(27, 76, 150);
+}
 .navigation {
 	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
 }
 
-.navigation ls {
-    display: none;
+.navigation li {
+	display: none;
 }
-
 .navigation a {
-    display: block;
+	display: inline-flex;
 	padding: 1rem;
-	text-align: center;
     vertical-align: middle;
+	text-align: center;
 	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: white;
-	color: #333;
 	font-weight: 700;
+	transition: 0.5s;
+    color: white;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
 }
 
 .show li {
-    display: block;
+	display: block;
 }
+
+/*.navigation a:hover {
+	background-color: white;
+	color: #333;
+	font-weight: 700;
+}*/
 
 h2 {
     display: flex;
@@ -97,16 +102,13 @@ main{
     grid-template-columns: 1fr;
     grid-gap: 1rem;
     justify-items: center;
-
     background-color: #fff;
     color:rgb(27, 76, 150)
 }
 
-footer
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
+footer p {
+    margin: 0 auto;
+    text-align: center;
 }
 
 
