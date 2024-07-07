@@ -14,12 +14,17 @@
     --nav-hover-background-color: var(--accent2-color);
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 header, main, footer {
-    
     background-color: rgb(27, 76, 150);
     color: white;
     width: 100%;
@@ -30,8 +35,13 @@ header, main, footer {
 }
 
 header {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
 }
 
 #menu {
