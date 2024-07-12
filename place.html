@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Jamie Cummings, Place Page</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Week 03 Project Work, A place I've visted">
+        <meta name="author" content="Jamie Cummings">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Nepal</h1>
+        </header>
+        <main>
+            <div class="hero">
+                <figure>
+                    <picture>
+                        <source srcset="images/kalle-kortelainen-cenlDgUeuW8-unsplash.webp" media="min-width: 1000px">
+                        <source srcset="images/nepal1.webp" media="min-width: 550px">
+                        <img src="images/kalle-kortelainen-cenlDgUeuW8-unsplash.webp" alt="Photo by Kalle Kortelainen, from Upsplash" width="1000" height="667">
+                    </picture>
+                    <figcaption>Photo by <a href="https://images.unsplash.com/photo-1492584328860-c0c7bb599679?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Kalle Kortelainen</a> on Unsplash
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <p>Area: </p><span>56,827 mi²</span>
+                <p>Population: </p><span>30.55 million</span>  
+                <p>Capital: </p><span>Kathmandu</span>   
+                <p>official Language</p><span>Nepali</span>
+                <p>Currency: </p><span>Nepalese Rupee</span>
+                <p>Time Zone: </p><span>GMT+5:45</span>
+                <p>Calling Code: </p><span>+977</span>
+                <p>Internet TLD: </p><span>.np</span>
+            </div>
+
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-07-128.svg" alt="weather icon" width="25" height="25" class="weathericon">
+                <p>Temperature: </p><span id="temp"></span>
+                <p>Conditions: </p><span id="conditions"></span>
+                <p>Wind: </p><span id="windspeed"></span>
+                <p>Wind Chill: </p><span id="windchill"></span>
+            </div>  
+            
+        </main> 
+        <footer>
+            <p id="copywrite"></p>
+            <p id="modified"></p>
+        </footer>
+    </body>
+</html>
