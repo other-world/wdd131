@@ -17,7 +17,7 @@ img {
     animation: fade 15s; 
 }
 
-@heyframes fade {
+@keyframes fade {
     0% {
         opacity: 0;
     }
