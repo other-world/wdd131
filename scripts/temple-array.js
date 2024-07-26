@@ -82,11 +82,45 @@ const temples = [
     // Add more temple objects here...
   ];
 
-createTempleCard();
 
-function createTempleCard() {
+//const oldTemplesLink = document.getElementById(".old");
+//const newTemplesLink = document.getElementById(".new");
+//const largeTemplesLink = document.getElementById(".large");
+//const smallTemplesLink = document.getElementById(".small");
+
+/*largeTemplesLink.addEventListener("click", () => {
+  let largeTemples = temples.filter(temple => temple.area > 10000);
+  console.log("Large clicked.");
+  createTempleCard(largeTemples);
+});
+
+/*oldTemplesLink.addEventListener("click", () => {
+  let oldTemples = temples.filter(temple => temple.dedicated < 1980);
+  console.log("Old clicked.");
+  createTempleCard(oldTemples);
+});
+
+newTemplesLink.addEventListener("click", () => {
+  let oldTemples = temples.filter(temple => temple.dedicated >= 1980);
+  console.log("New clicked.");
+  createTempleCard(newTemples);
+});
+
+
+
+smallTemplesLink.addEventListener("click", () => {
+  let smallTemples = temples.filter(temple => temple.area <= 10000);
+  console.log("Small clicked.");
+  createTempleCard(smallTemples);
+});*/
+const largeTemples = temples.filter(temple => temple.area > 10000);
+
+createTempleCard(largeTemples);
+
+function createTempleCard(filteredTemples) {
     temples.forEach(temple => {
-        //console.log(`Temple Name: ${temple.templeName}`);
+        console.log(`Temple Area: ${temple.area}`);
+        if
 
         let card = document.createElement("section");
         let name = document.createElement("h3");

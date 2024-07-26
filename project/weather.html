@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Jamie Cummings, Place Page</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Week 03 Project Work, A place I've visted">
+        <meta name="author" content="Jamie Cummings">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>TERT</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Weather</a>
+                <a href="wildflowers.html">Wildflowers</a>
+                <a href="siteplan.html">Site Plan</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <figure>
+                    <picture>
+                        <source srcset="images/weather1.webp" media="(min-width: 550px)">
+                        <img src="images/weather1.webp" alt="Sunrise after a storm on Timpanogos" width="550" height="665">
+                    </picture>
+                    <figcaption>Photo by Jamie Cummigns</figcaption>
+                </figure>
+            </div>
+
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-07-128.svg" alt="weather icon" width="25" height="25" class="weathericon">
+                <p>Temperature: </p><span id="temp"></span>
+                <p>Conditions: </p><span id="conditions"></span>
+                <p>Wind: </p><span id="windspeed"></span>
+                <p>Wind Chill: </p><span id="windchill"></span>
+            </div>  
+            
+        </main> 
+        <footer>
+            <p id="copywrite"></p>
+            <p id="modified"></p>
+        </footer>
+    </body>
+</html>

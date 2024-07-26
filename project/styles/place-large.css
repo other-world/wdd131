@@ -1,0 +1,57 @@
+@media screen and (min-width: 600px){
+
+    .weather, .data {
+        position: absolute;
+        width: 30%;
+        background-color: black;
+        opacity: 0.75; 
+        color: white;
+        border-radius: 5px;
+        padding: 4rem 5px 10px 5px;
+        margin: 0;
+    }
+
+    .data {
+        top: 10%;
+        left: 5%;
+        width: 40%;
+    }
+
+    .weather {
+        bottom: 10%;
+        right: 5%;
+        width: 30%;
+    }
+
+    .weather h2, .data h2 {
+        position: absolute;
+        text-align: left ;
+        background-color: var(--background_color2);
+        color: var(--font-color2);
+        opacity: 1.0;
+        padding-left: 2rem;
+    }
+
+    .data h2 {  
+        right: 27%;
+        bottom: 73%;
+        width: 70%;
+    }
+    
+    .weather h2 {
+        position: absolute;
+        right: 26%;
+        bottom: 60%;
+        width: 70%;
+    }
+
+    .weathericon {
+        position: absolute;
+        display: block;
+        margin: 3px auto;
+        width: 50%;
+        right: 5%;
+        bottom: 70%;
+        width: 70%;
+    }
+}
