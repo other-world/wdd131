@@ -1,3 +1,22 @@
+/* Style sheet for Jamie Cummings personal page. WDD 131 */
+:root {
+    --primary-color: #0693e3;
+    --secondary-color: white;
+    --accent2-color: #fcb900;
+    --accent1-color: #152750;
+    --font1-color: #152750;
+    --font2-color: white;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Gupter', serif;
+    
+    --nav-bg-color: var(--primary-color);
+    --nav-link-color: var(--accent1-color);
+    --nav-visited-color: #0d1c92;
+    --nav-hover-link-color: var(--accent2-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,8 +27,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+p {
+	font-family: var(--paragraph-font);
+}
+
 header, main, footer {
-    background-color: rgb(27, 76, 150);
+    background-color: var(--primary-color);
     color: white;
     width: 100%;
     max-width: 960px;
@@ -47,8 +70,8 @@ h1 {
 }
 
 nav {
-	background-color: rgb(27, 76, 150);
 }
+
 .navigation {
 	list-style: none;
 	margin: 0 auto;
@@ -83,7 +106,7 @@ h2 {
     justify-content: center;
 }
 
-main{
+main {
     max-width: 900px;
     display: grid;
     grid-template-columns: 1fr;
