@@ -58,6 +58,7 @@ nav {
 .navigation li {
 	display: none;
 }
+
 .navigation a {
 	display: inline-flex;
 	padding: 1rem;
@@ -72,10 +73,6 @@ nav {
 .navigation a:hover, navigation a:active {
 	color: white;
 	background-color: black;
-}
-
-.show li {
-	display: block;
 }
 
 h2 {
