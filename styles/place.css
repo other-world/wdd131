@@ -3,7 +3,7 @@
     --background_color2: white;
     --background_color3: rgb(182, 238, 249);
     --font_color1: rgb(12, 34, 67);
-    --font-color2: rgb(5, 16, 31);
+    --font-color2: rgb(245, 247, 249);
     --accent-color: #ff8c00;
 }
 
@@ -44,9 +44,19 @@ h1 {
 }
 
 h2 {
-    font-weight: 600;
+/*     font-weight: 600;
     margin: 1rem;
-    background-color: var(--accent-color);
+    background-color: var(--background_color3);
+    color: var(--font_color1);
+    box-shadow:  5px 2px 2px #ff8c00; */
+
+    background-color: var(--font_color1);
+    color: var(--background_color3);
+    padding: 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 0 10px gray;
 }
 
 .weathericon {
