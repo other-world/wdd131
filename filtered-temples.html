@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131 - Dynamic Web Fundamentals - Jamie Cummings</title>
-        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Week 01 Project Work, Temple Album">
-        <meta name="author" content="Jamie Cummings">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/filtered-temples.css">
-        <link rel="stylesheet" href="styles/filtered-temples-large.css">
 
-        <script src="scripts/filtered-temples.js" defer></script>
-        <script src="scripts/temple-array.js" defer></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Jamie Cummings</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Week 01 Project Work, Temple Album">
+    <meta name="author" content="Jamie Cummings">
 
-    <body>
-        <header>
-            <h1>Temple Album</h1>
-            <a id="menu" href="#"></a>
-                <!--material icons https://material.io/resources/icons/ >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/temple-array.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <a id="menu" href="#" aria-label="Collapsed menu for mobile view"></a>
+        <!--material icons https://material.io/resources/icons/ >
                 <i class="menuIcon material-icons">menu</i>
                 <i class="closeIcon material-icons">close</i>
               </button-->
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" id="home">Home</a></li>
-                    <li><a href="#" id="old">Old</a></li>
-                    <li><a href="#" id="new">New</a></li>
-                    <li><a href="#" id="large">Large</a></li>
-                    <li><a href="#" id="small">Small</a></li>
-                </ul>
-            </nav>
-            
-        </header>
-        <main>
-            <h2>Home</h2>
-            <div class="temple-grid">
-            </div>
-        </main> 
-        <footer>
-            <p id="copywrite"></p>
-            <p id="modified"></p>
-        </footer>
-    </body>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="home" aria-label="All temples">Home</a></li>
+                <li><a href="#" id="old" aria-label="Temples built prior to 1900">Old</a></li>
+                <li><a href="#" id="new" aria-label="Temples built after 1900">New</a></li>
+                <li><a href="#" id="large" aria-label="Larger temples">Large</a></li>
+                <li><a href="#" id="small" aria-label="Smaller temples">Small</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="temple-grid">
+        </div>
+    </main>
+    <footer>
+        <p id="copywrite"></p>
+        <p id="modified"></p>
+    </footer>
+</body>
+
 </html>

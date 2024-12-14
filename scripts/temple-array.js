@@ -5,7 +5,7 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+      "./images/aba-nigeria-temple-lds-273999-wallpaper.webp"
   },
   {
     templeName: "Manti Utah",
@@ -13,7 +13,7 @@ const temples = [
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+      "./images/manti-temple-768192-wallpaper.webp"
   },
   {
     templeName: "Payson Utah",
@@ -21,7 +21,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+      "./images/payson-utah-temple-exterior-1416671-wallpaper.webp"
   },
   {
     templeName: "Yigo Guam",
@@ -29,7 +29,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+      "./images/yigo_guam_temple_2.webp"
   },
   {
     templeName: "Washington D.C.",
@@ -37,7 +37,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+      "./images/washington_dc_temple-exterior-2.webp"
   },
   {
     templeName: "Lima Perú",
@@ -45,7 +45,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+      "./images/lima-peru-temple-evening-1075606-wallpaper.webp"
   },
   {
     templeName: "Mexico City Mexico",
@@ -53,7 +53,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "./images/mexico-city-temple-exterior-1518361-wallpaper.webp"
   },
   {
     templeName: "Portland Oregon",
@@ -61,7 +61,7 @@ const temples = [
     dedicated: "1989, August, 19",
     area: 80500,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/portland-oregon/2018/400x250/Portland-Oregon-Temple10.jpg"
+      "./images/Portland-Oregon-Temple10.webp"
   },
   {
     templeName: "Provo City Center",
@@ -69,7 +69,7 @@ const temples = [
     dedicated: "2016, March, 20",
     area: 85084,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/provo-city-center/400x250/provo-city-center-temple-1572517-wallpaper.jpg"
+      "./images/provo-city-center-temple-1572517-wallpaper.webp"
   },
   {
     templeName: "Apia Samoa",
@@ -77,7 +77,7 @@ const temples = [
     dedicated: "1983, August, 5",
     area: 18691,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/400x250/apia-samoa-temple-lds-460475-wallpaper.jpg"
+      "./images/apia-samoa-temple-lds-460475-wallpaper.webp"
   },
   {
     templeName: "St. George",
@@ -85,7 +85,7 @@ const temples = [
     dedicated: "1877, April, 6",
     area: 143969,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/st-george-utah/400x250/st-george-temple-761089-wallpaper.jpg"
+      "./images/st-george-temple-761089-wallpaper.webp"
   },
   {
     templeName: "Salt Lake",
@@ -93,7 +93,7 @@ const temples = [
     dedicated: "1893, April, 6",
     area: 253000,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/2018/400x250/slctemple7.jpg"
+      "./images/slctemple7.webp"
   },
   // Add more temple objects here...
 ];
@@ -149,8 +149,8 @@ function createTempleCard(filteredTemples) {
     let img = document.createElement("img");
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
-    img.setAttribute("width", "400");
-    img.setAttribute("height", "250");
+    img.setAttribute("width", "250");
+    img.setAttribute("height", "156");
     img.setAttribute("loading", "lazy");
 
     card.appendChild(name);

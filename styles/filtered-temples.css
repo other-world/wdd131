@@ -93,11 +93,18 @@ main {
 }
 
 section {
+	display: flex;
+	flex-direction: column;
 	background-color: #eee;
 	padding: 10px;
 	border: 1px solid rgb(165, 164, 164);
 	border-radius: 5px;
 	justify-content: center;
+}
+
+img {
+	margin: 1rem auto;
+	/*box-shadow: 0 0 10px grey;*/
 }
 
 .temple-grid {
