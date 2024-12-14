@@ -140,14 +140,17 @@ function createTempleCard(filteredTemples) {
     let location = document.createElement("p");
     let dedicated = document.createElement("p");
     let size = document.createElement("p");
-    let img = document.createElement("img");
 
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
     size.innerHTML = `<span class="label">Area:</span> ${temple.area} square ft`;
+
+    let img = document.createElement("img");
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("width", "400");
+    img.setAttribute("height", "250");
     img.setAttribute("loading", "lazy");
 
     card.appendChild(name);
