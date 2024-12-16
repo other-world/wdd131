@@ -42,7 +42,7 @@ form {
 .productReview input[type="textarea"],
 .productReview select {
     display: block;
-    background-color: #white;
+    background-color: white;
     color: #444;
     border: 1px solid #999;
     border-radius: 4px;
