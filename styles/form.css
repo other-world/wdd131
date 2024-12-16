@@ -1,7 +1,5 @@
 main {
     width: 100%;
-    font-size: 2vmin;
-
 }
 
 h1, form, footer{
@@ -12,6 +10,11 @@ h1, form, footer{
     max-width: 400px;
     margin-bottom: 0;
     margin: 0 auto;
+    font-size: 2dvh;
+}
+
+h1 {
+    font-size: 4dvh;
 }
 
 /*----------- FORM ---------------*/
@@ -28,12 +31,10 @@ form {
 .productReview label {
     display: block;
     padding-top: 1rem;
-    font-size: 2vmin;
 }
 
 .productReview div {
     padding-top: 1rem;
-    font-size: .9rem;
     font-weight: bolder;
 }
 
@@ -60,7 +61,6 @@ form {
 
 .accessible {
     height: 44px;
-    font-size: x-large;
 }
 
 .productReview input[type="submit"] {
