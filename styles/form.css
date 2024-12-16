@@ -23,6 +23,7 @@ form {
     background-color: #ddd;
     color: black;
     width: 100%;
+    font-family: "Gupter", sans-serif;
 }
 
 .title {
@@ -36,7 +37,7 @@ form {
 
 .productReview div {
     padding-top: 1rem;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .productReview input[type="text"],
