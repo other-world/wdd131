@@ -10,11 +10,6 @@ h1, form, footer{
     max-width: 400px;
     margin-bottom: 0;
     margin: 0 auto;
-    font-size: 2dvh;
-}
-
-h1 {
-    font-size: 4dvh;
 }
 
 /*----------- FORM ---------------*/
