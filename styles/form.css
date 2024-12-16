@@ -1,0 +1,77 @@
+main {
+    width: 100%;
+    font-size: 2vmin;
+
+}
+
+h1, form, footer{
+    background-color: #111;
+    color: white;
+    padding: .5% 1%;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+/*----------- FORM ---------------*/
+form {
+    background-color: #ddd;
+    color: black;
+    width:100%;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.productReview label {
+    display: block;
+    padding-top: 1rem;
+    font-size: 2vmin;
+}
+
+.productReview div {
+    padding-top: 1rem;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.productReview input[type="text"],
+.productReview input[type="date"],
+.productReview input[type="textarea"],
+.productReview select {
+    display: block;
+    background-color: #white;
+    color: #444;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 350px;
+    appearance: none;
+}
+
+.productReview input[type="radio"],
+.productReview input[type="checkbox"] {
+    margin-right: 6px;
+    margin-bottom: 0px;
+}
+
+.accessible {
+    height: 44px;
+    font-size: x-large;
+}
+
+.productReview input[type="submit"] {
+    display: block;
+    border: 1px solid #aaa;
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(189, 188, 188));
+    color: #111;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 2rem 0;
+    box-shadow: 1px 1px 4px #999;
+}

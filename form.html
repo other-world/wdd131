@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131 Final - Timpanogos Emergency Response Team - Jamie Cummings</title>
-        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Final Project, TERT, Timpanogos Emergency Response Team">
+        <title>WDD 131 Week 05 Assignment</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Jamie Cummings, Week 05 Assignment: Making a dynamic form.">
         <meta name="author" content="Jamie Cummings">
         <!--link rel="stylesheet" href="styles/base.css"-->
         <script src="scripts/getdates.js" defer></script>
-        <script src="scripts/form.js" defer></script>
+        <script src="scripts/productList.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -17,6 +17,43 @@
     </head>
     <body>
         <main>
+            <h1>Product Review</h1>
+            <form method="get" action="review.html" class="productReview">
+                <label class="title">Product Name*
+                    <select name="product" id="productList" required>
+                        <option selected="selected" disabled>Choose a Product &#9662</option>
+                        <!-- Dynamicall Generated in Javascript
+                        <option value="cse110">CSE110</option>
+                        <option value="cse111">CSE111</option>
+                        <option value="wdd130">WDD130</option>
+                        <option value="wdd131">WDD131</option>
+                        <option value="WDD231">WDD231</option>
+                        <option value="itm111">ITM 111</option> -->
+                    </select>
+                </label>
+                <div class="title">Overall Rating</div>
+                <label class="accessible"><input type="radio" name="overallRating" value="onestar" required>&star;</label>
+                <label class="accessible"><input type="radio" name="overallRating" value="twostars" required>&star;&star;</label>
+                <label class="accessible"><input type="radio" name="overallRating" value="threestars" required>&star;&star;&star;</label>
+                <label class="accessible"><input type="radio" name="overallRating" value="fourstars" required>&star;&star;&star;&star;</label>
+                <label class="accessible"><input type="radio" name="overallRating" value="fivestars" required>&star;&star;&star;&star;&star;</label>
+
+                <label class="title">Date of Installation<input type="date" name="completedDate" required></label>
+
+                <div class="title">Which features did you find useful?<br><i>(Check all that apply)</i></div>
+                <label class="accessible"><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label class="accessible"><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+                <label class="accessible"><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label class="accessible"><input type="checkbox" name="design" value="yes">Design</label>
+
+                <label class="title"l>Written Review <i>(Optional)</i>
+                <textarea id="writtenReview" name="written Review" rows="10" cols="30"></textarea></label>
+
+            
+                <label class="title">Name <i>(Optional)</i><input type="text" name="fname"></label>
+                <input type="submit" value="Post Review">
+
+            </form>
         </main>
         <footer>
             <p id="copywrite"></p>
