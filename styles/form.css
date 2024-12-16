@@ -20,18 +20,19 @@ h1 {
 
 /*----------- FORM ---------------*/
 form {
-    background-color: #ddd;
+    background-image: linear-gradient(#6992b6, aliceblue) ;
     color: black;
     width: 100%;
 }
 
 .title {
     font-weight: bold;
+    padding-top: 1rem;
 }
 
 .productReview label {
     display: block;
-    padding-top: 1rem;
+    padding-right: 6px;
 }
 
 .productReview div {
@@ -56,8 +57,8 @@ form {
 
 .productReview input[type="radio"],
 .productReview input[type="checkbox"] {
-    margin-right: 6px;
-    margin-bottom: 0px;
+    margin: 0px 6px 0px 0px;
+    padding: 0px;
 }
 
 .accessible {
@@ -67,7 +68,7 @@ form {
 .productReview input[type="submit"] {
     display: block;
     border: 1px solid #aaa;
-    background-image: linear-gradient(rgb(238, 238, 238), rgb(189, 188, 188));
+    background-image: linear-gradient(aliceblue, #6992b6);
     color: #111;
     border-radius: 6px;
     padding: .75rem;
