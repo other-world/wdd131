@@ -61,6 +61,11 @@ h2{
     background-color: var(--secondary-color);
     color: var(--font1-color);
     font-family: var(--heading-font);
+    text-align: left;
+    border-bottom: 1px solid #152750;
+    margin-top: 1.5rem;
+    width: 100%;
+    max-width: 960px;
 }
 
 aside {
@@ -92,13 +97,14 @@ aside {
 	max-width: 760px;
 }
 
-.navigation li {
+li {
 	display: none;
     width: 100%;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
-.navigation a {
+
+a {
 	display: inline-flex;
 	padding: 1rem;
     vertical-align: middle;
@@ -107,9 +113,10 @@ aside {
 	font-weight: 700;
 	transition: 0.5s;
     color: var(--secondary-color);
+    font-size: large;
 }
 
-.navigation a:hover, navigation a:active {
+a:hover, a:active {
     width: 100%;
 	color:var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
@@ -124,13 +131,6 @@ li {
     padding-left: 1.5rem;
 }
 
-p { 
-    color: var(--font1-color);
-    font-family: var( --paragraph-font);
-    padding: 0; 
-    margin: 1rem;
-}
-
 img {
     height: auto;
     padding: 2px;
@@ -138,14 +138,11 @@ img {
     margin: 1rem;
 }
 
-#siteplan {
-    text-align: left;
-}
-
-h2 {
-    text-align: left;
-    border-bottom: 1px solid #152750;
-    margin-top: 1.5rem;
+p { 
+    color: var(--font1-color);
+    font-family: var( --paragraph-font);
+    padding: 0; 
+    margin: 1rem;
 }
 
 #wireframes {
@@ -154,12 +151,11 @@ h2 {
     padding: 1rem;
 }
 
-footer {
+footer, footer p {
+    color: var(--font2-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-footer p{
-    color: white;
-}
+
