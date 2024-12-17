@@ -1,7 +1,6 @@
-console.log("Hello World");
-//document = "getdates.js";
 const yr = new Date().getFullYear();
 const lastModified = document.lastModified;
+console.log(document.getElementById("modified"));
 const author = "Jamie Cummings";
 const place = "Utah, USA";
 
