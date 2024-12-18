@@ -56,7 +56,6 @@
         grid-template-columns: repeat(auto-fit, minmax(255px, 255px));
         grid-template-rows: auto;
         justify-content: start;
-        column-gap: none;
         max-width: 100%;
     }
 
