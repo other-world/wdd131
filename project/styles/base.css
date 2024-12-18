@@ -258,6 +258,9 @@ fieldset {
     font-weight: bold;
 }
 
+label {
+    font-weight: lighter;
+}
 
 input[type="submit"]{
     background-image: linear-gradient(aliceblue, #6992b6);
